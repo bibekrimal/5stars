@@ -43,7 +43,7 @@ body {
 	width: 100%;
 	min-height: 400px;
 	/*font-family: 'Verdana', sans-serif;*/
-	font-family: 'Droid Serif', sans-serif;
+	font-family: 'Libre Baskerville', sans-serif;
 }
 
 #synoptive-container .loading_image {
@@ -349,10 +349,10 @@ body {
 #synoptive .accordion .accordion_header {
 	font-size: 28px;
 	/* background-color: #a20405; */
-	height: 40px;
+	/* height: 40px; */
 	font-weight: bold;
 	line-height: 40px;
-	padding: 0;
+	padding: 5px 0;
 	display: block;
 	border-top: 2px solid #a20405;
 	position: relative;
@@ -360,24 +360,41 @@ body {
 	-webkit-transition: 0.33s padding, 0.33s margin;
 	-moz-transition: 0.33s padding, 0.33s margin;
 	color: #a20405;
-	background-image: url(https://5starequineproducts.com/configurator/css/caret-down.svg);
-	background-position: calc(100% - 10px) center;
-	background-size: 15px;
-	background-repeat: no-repeat;
+	/* 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFk%0D%0Ab2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246%0D%0AIDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5z%0D%0APSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0MzYuNyAyNjUi%0D%0AIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQzNi43IDI2NTsiIHhtbDpzcGFjZT0i%0D%0AcHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNBMzFDMjA7fQo8%0D%0AL3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI5LjcsNjMuNkwyMzUuMywyNThjLTkuNCw5%0D%0ALjQtMjQuNiw5LjQtMzMuOSwwTDcsNjMuNmMtOS40LTkuNC05LjQtMjQuNiwwLTMzLjlMMjkuNyw3%0D%0ACgljOS40LTkuNCwyNC41LTkuNCwzMy45LDBsMTU0LjcsMTU0TDM3My4xLDdjOS40LTkuMywyNC41%0D%0ALTkuMywzMy45LDBsMjIuNywyMi43QzQzOSwzOS4xLDQzOSw1NC4zLDQyOS43LDYzLjZ6Ii8+Cjwv%0D%0Ac3ZnPgo=); */
+	/* 	background-position: calc(100% - 10px) center; */
+	/* 	background-size: 42px 26px; */
+	/* 	background-repeat: no-repeat; */
 }
 
 #synoptive .accordion .accordion_section.accordion_section-open .accordion_header {
 	/* background-color: #a20405; */
-	background-image: url(https://5starequineproducts.com/configurator/css/caret-arrow-up.svg);
+	/* background-image: url(https://5starequineproducts.com/configurator/css/caret-arrow-up.svg); */
 	color: #a20405;
 	font-weight: 900;
 	padding-left: 0;
 }
 
+#synoptive .accordion .accordion_header:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 5px;
+	width: 42px;
+	height: 26px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFk%0D%0Ab2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246%0D%0AIDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5z%0D%0APSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0MzYuNyAyNjUi%0D%0AIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQzNi43IDI2NTsiIHhtbDpzcGFjZT0i%0D%0AcHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNBMzFDMjA7fQo8%0D%0AL3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI5LjcsNjMuNkwyMzUuMywyNThjLTkuNCw5%0D%0ALjQtMjQuNiw5LjQtMzMuOSwwTDcsNjMuNmMtOS40LTkuNC05LjQtMjQuNiwwLTMzLjlMMjkuNyw3%0D%0ACgljOS40LTkuNCwyNC41LTkuNCwzMy45LDBsMTU0LjcsMTU0TDM3My4xLDdjOS40LTkuMywyNC41%0D%0ALTkuMywzMy45LDBsMjIuNywyMi43QzQzOSwzOS4xLDQzOSw1NC4zLDQyOS43LDYzLjZ6Ii8+Cjwv%0D%0Ac3ZnPgo=) no-repeat;
+	background-size: 42px 26px;
+	transition: transform 0.3s linear;
+}
 #synoptive .accordion .accordion_section .accordion_content {
 	margin-bottom: 0;
 	overflow-y: auto;
 	max-height: 512px;
+}
+
+#synoptive .accordion .accordion_section.accordion_section-open .accordion_header:after {
+	transform: rotate(180deg);
 }
 
 .tooltip_popup {
