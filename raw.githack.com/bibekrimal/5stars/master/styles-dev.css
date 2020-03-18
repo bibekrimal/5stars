@@ -891,13 +891,14 @@ body {
 }
 
 #synoptive .action_panel {
-	display: inline-block;
+	display: block;
 	padding: 15px 30px;
-	float: right;
-	width: 180px;
-	background-color: #3b3b3b;
+	/* float: right; */
+	width: 368px;
+	height: 74px;
+	background-color: #a20405;
 	color: #fff;
-	background-image: url(https://5starequineproducts.com/configurator/css/shopping-cart.svg);
+	/* background-image: url(https://5starequineproducts.com/configurator/css/shopping-cart.svg); */
 	background-repeat: no-repeat;
 	background-size: 16px;
 	background-position: 142px center;
@@ -905,9 +906,16 @@ body {
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	cursor: pointer;
-	margin-top: 15px;
+	margin: 26px auto 0;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+	font-size: 36px;
+	text-align: center;
+	border-radius: 3px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
 }
 
 #synoptive .composite_solution_panel .action_panel:hover {
@@ -954,12 +962,41 @@ body {
 }
 
 #synoptive .line_item_summary .line_items {
-	padding: 10px;
+	padding: 0 10px;
 }
 
 #synoptive .line_item_summary .line_items > .part_line_items, #synoptive .line_item_summary .line_items .summary_group {
 	border-bottom: 2px solid #a20405;
-	padding: 6px 0;
+	padding: 11px 0;
+}
+
+#synoptive .line_item_summary .line_items .summary_group {
+	padding-left: 110px;
+	position: relative;
+}
+
+#synoptive .line_item_summary .line_items .summary_group .group_header {
+	width: 93px;
+	height: 27px;
+	font-size: 15px;
+	line-height: 1.2;
+	border: 2px solid #a20405;
+	padding: 2px;
+	color: #a20405;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
 }
 
 #synoptive .part_line_items {
@@ -1042,8 +1079,9 @@ body {
 #synoptive .line_item_value {
 	display: inline-block;
 	vertical-align: middle;
-	font-weight: 700;
+	/* font-weight: 700; */
 	/* width: 20%; */
+	margin-right: 12px;
 }
 
 #synoptive .box_panel {
@@ -1389,6 +1427,8 @@ body {
 	color: #555555;
 	border: 2px solid #a20405;
 	background: #fff;
+	position: relative;
+	margin-bottom: 110px;
 }
 
 #synoptive .welcome_panel {
