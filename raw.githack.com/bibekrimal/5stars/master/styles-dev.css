@@ -393,6 +393,7 @@ body {
 	margin-bottom: 0;
 	overflow-y: auto;
 	max-height: 512px;
+	overflow-x: hidden;
 }
 
 #synoptive .accordion .accordion_section.accordion_section-open .accordion_header:after {
@@ -984,12 +985,24 @@ body {
 }
 
 #synoptive .total_price {
-	text-align: right;
+	/* text-align: right; */
 	font-size: 20px;
 	font-weight: 700;
-	margin-top: 30px;
+	margin-top: 0;
 	color: #a50c0d;
 	cursor: pointer;
+	padding: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+#synoptive .total_price:before {
+	content: 'Total Price:';
+	margin-right: 5px;
 }
 
 #synoptive .discounted_price_label {
