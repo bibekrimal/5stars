@@ -896,12 +896,12 @@ body {
 	/* float: right; */
 	width: 368px;
 	height: 74px;
-	background-color: #a20405;
+	background: #A20406 url(https://raw.githubusercontent.com/bibekrimal/5stars/master/bg-btn.png) no-repeat;
 	color: #fff;
 	/* background-image: url(https://5starequineproducts.com/configurator/css/shopping-cart.svg); */
-	background-repeat: no-repeat;
-	background-size: 16px;
-	background-position: 142px center;
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* background-position: 142px center; */
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
