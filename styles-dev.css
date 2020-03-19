@@ -1201,6 +1201,7 @@ body {
 
 #synoptive .solution_thumbnail_panel {
 	display: inline-block;
+	vertical-align: top;
 	/*width: calc((100% - 50px) / 5);*/
 	/* float: left; */
 	width: 33.33%;
