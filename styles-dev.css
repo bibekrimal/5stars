@@ -77,6 +77,7 @@ body {
 	color: #555555;
 }
 
+
 #synoptive .main_panel {
 	display: block;
 }
@@ -1365,7 +1366,7 @@ body {
 
 #synoptive img.solution_thumbnail_image {
 	height: auto;
-	width: 100%;
+	width: 99%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -1752,6 +1753,10 @@ padding: 13px 0;
 
 .synoptive-specs .notes p {
 	margin-bottom: 15px;
+}
+
+div.syn-zoomContainer.active .zoomWindowContainer {
+	display: block !important;
 }
 
 @media (max-width: 991px) {
